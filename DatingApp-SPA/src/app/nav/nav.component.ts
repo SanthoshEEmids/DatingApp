@@ -23,6 +23,7 @@ export class NavComponent implements OnInit {
       .subscribe(next => {
         this.alertify.success('Logged in Successfully');
       },
+        // tslint:disable-next-line: no-shadowed-variable
         error => {
           this.alertify.error(error);
         }, () => {
